@@ -1,0 +1,10 @@
+html,
+body {
+  background-color: antiquewhite;
+}
+
+p {
+  inline-size: 100%;
+  text-align: center;
+  margin-block-start: 30px;
+}

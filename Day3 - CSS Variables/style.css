@@ -1,0 +1,43 @@
+:root {
+  --base: hsl(47, 100%, 50%);
+  --spacing: 10px;
+  --blur: 10px;
+  --background-color: hsl(205, 49%, 19%);
+  --text-color: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 25px;
+}
+
+body {
+  text-align: center;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: "helvetica neue", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  margin: 0;
+}
+
+h2 {
+  margin-block-start: 0.8rem;
+  margin-block-end: 0.4px;
+}
+.hl {
+  color: var(--base);
+}
+
+.controls {
+  margin-block-end: 1rem;
+}
+
+input {
+  inline-size: 4rem;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}

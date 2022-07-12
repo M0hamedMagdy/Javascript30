@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Day8 - Fun with HTML5 Canvas</title>
+  </head>
+  <body>
+    <form>
+      <label for="range">Strok Size</label>
+      <input type="range" name="range" id="range" />
+
+      <label for="color">Color:</label>
+      <input type="color" name="color" id="color" />
+
+      <label for="hue" class="hue">Draw with Hue:</label>
+      <input type="checkbox" name="hue" id="hue" />
+    </form>
+    <canvas id="draw" width="800" height="800"></canvas>
+  </body>
+</html>

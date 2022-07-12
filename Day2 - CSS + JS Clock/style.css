@@ -1,0 +1,71 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #018ded url(https://unsplash.it/1500/1000?image=881&blur=5);
+  background-size: cover;
+  font-family: "helvetica neue";
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  block-size: 100vh;
+  overflow: hidden;
+}
+
+.clock {
+  inline-size: 30rem;
+  block-size: 30rem;
+  border: 20px solid white;
+  border-radius: 50%;
+  position: relative;
+  padding: 2rem;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+  position: relative;
+  inline-size: 100%;
+  block-size: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+.h {
+  position: absolute;
+  color: black;
+}
+
+.hand {
+  inline-size: 50%;
+  block-size: 6px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+#min {
+  block-size: 4px;
+}
+
+#sec {
+  block-size: 3px;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  text-shadow: rgb(221, 227, 230) 1px 0px 0px,
+    rgb(221, 227, 230) 0.540302px 0.841471px 0px,
+    rgb(221, 227, 230) -0.416147px 0.909297px 0px,
+    rgb(221, 227, 230) -0.989992px 0.14112px 0px,
+    rgb(221, 227, 230) -0.653644px -0.756802px 0px,
+    rgb(221, 227, 230) 0.283662px -0.958924px 0px,
+    rgb(221, 227, 230) 0.96017px -0.279415px 0px;
+}

@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(34, 78%, 91%);
+}
+
+p {
+  inline-size: 100%;
+  text-align: center;
+}
